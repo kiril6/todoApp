@@ -1,0 +1,73 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.frame {
+  margin: 0 auto !important;
+  padding: 0 5px;
+  width: 287px; }
+
+.input-group {
+  width: 100%; }
+
+.input-size {
+  width: 185px; }
+
+.empty-tasks {
+  color: red;
+  text-align: center;
+  padding-top: 20px; }
+
+thead tr th {
+  padding: 16px 0 10px;
+  text-decoration: none; }
+  thead tr th:first-child {
+    text-align: left;
+    text-decoration: none; }
+    thead tr th:first-child:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+  thead tr th:nth-child(1) {
+    width: 21%; }
+  thead tr th:nth-child(2) {
+    width: 8%; }
+  thead tr th:nth-child(3) {
+    width: 2%; }
+
+tfoot tr th {
+  text-align: center !important;
+  padding-top: 10px;
+  text-decoration: underline; }
+  tfoot tr th:first-child {
+    text-align: left;
+    text-decoration: none; }
+  tfoot tr th:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-top: 10px;
+    text-decoration: none;
+    cursor: pointer; }
+  tfoot tr th span {
+    padding: 1px 5px; }
+  tfoot tr th span:hover, tfoot tr th span:active, tfoot tr th span:visited {
+    background: green;
+    padding: 1px 5px;
+    border-radius: 5px;
+    color: white; }
+
+tbody tr {
+  border-bottom: 1px solid lightblue; }
+  tbody tr td {
+    padding: 5px 0; }
+    tbody tr td button:first-child {
+      margin-left: 10px; }
+    tbody tr td button:last-child {
+      margin-left: 5px; }
+
+#add.form-control {
+  width: 67% !important; }
+
+#id.form-control.input-sm {
+  width: 100% !important; }

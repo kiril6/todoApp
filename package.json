@@ -1,0 +1,40 @@
+{
+  "main": "index.js",
+  "name": "to-do",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [],
+  "author": "Kiril Delovski",
+  "license": "demonstration",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.13.4",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.6.1",
+    "react-scripts": "0.8.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "node-sass-chokidar": "0.0.3",
+    "react-hot-loader": "^1.3.0",
+    "react-scripts": "1.0.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "engines": {
+    "node": "5.5.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,2 +1,20 @@
 # todoApp
-This is a to do app made in React
+This is a to do app made in React with Local Storage
+
+This Todo App can:
+
+Create task
+Edit task
+List tasks
+Delete task
+Mark task complete
+Mark all tasks completed and delete
+Filter tasks ( All, Active, Completed)
+
+Step 1) npm install
+Step 2) npm start
+
+
+If you like it and you found it helpful and useful you can contribute on my paypal kirilrap@aol.com
+
+Cheers!

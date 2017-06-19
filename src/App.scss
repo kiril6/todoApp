@@ -1,0 +1,25 @@
+//colors
+$color_0: #222;
+$color_1: white;
+$color_2: #959696;
+$color_3: #3498db;
+
+.App {
+	text-align: center;
+}
+.App-header {
+	background-color: $color_0;
+	height: 150px;
+	padding: 20px;
+	color: $color_1;
+}
+.app-title {
+  text-shadow: -1px -1px 6px $color_2;
+	color: $color_3;
+	font-weight: bold;
+	font-size: 35px;
+}
+.creator {
+	text-align: center;
+	margin-top: 30px;
+}
