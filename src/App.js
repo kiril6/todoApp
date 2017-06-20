@@ -4,29 +4,6 @@ import CreateTodo from './create-todo';
 import TodosList from './todos-list';
 import _ from 'lodash';
 
-const todos = [
-    {
-        id: 1,
-        task: 'Demo task 1 (mark it)',
-        isCompleted: false
-    },
-    {
-        id: 2,
-        task: 'Demo task 2 (de-mark it)',
-        isCompleted: true
-    },
-    {
-        id: 3,
-        task: 'Demo task 3 (edit it)',
-        isCompleted: false
-    },
-    {
-        id: 4,
-        task: 'Demo task 4 (delete it)',
-        isCompleted: false
-    }
-];
-
 export default class App extends React.Component {
 
     constructor(props) {
@@ -34,22 +11,22 @@ export default class App extends React.Component {
         this.storage = localStorage;
         this.state = {
             todos: [{
-                id: this.generateUUID(),
+                id: 1,
                 task: 'Demo task 1 (mark it)',
                 isCompleted: false
             },
             {
-                id: this.generateUUID(),
+                id: 2,
                 task: 'Demo task 2 (de-mark it)',
                 isCompleted: true
             },
             {
-                id: this.generateUUID(),
+                id: 3,
                 task: 'Demo task 3 (edit it)',
                 isCompleted: false
             },
             {
-                id: this.generateUUID(),
+                id: 4,
                 task: 'Demo task 4 (delete it)',
                 isCompleted: false
             }],
@@ -111,7 +88,7 @@ export default class App extends React.Component {
     toggleTask(task) {
         const foundTodo = _.find(this.state.todos, todo => todo.task === task);
         foundTodo.isCompleted = !foundTodo.isCompleted;
-        this.storage.setItem('todos', JSON.stringify(todos));
+        this.storage.setItem('todos', JSON.stringify(this.state.todos));
         this.setState({ todos: this.state.todos });
     }
 
@@ -157,7 +134,7 @@ export default class App extends React.Component {
             id: this.generateUUID(),
             isCompleted: false,
         });
-        this.storage.setItem('todos', JSON.stringify(todos));
+        this.storage.setItem('todos', JSON.stringify(this.state.todos));
 
         this.setState({ todos: this.state.todos });
     }
@@ -165,13 +142,13 @@ export default class App extends React.Component {
     saveTask(oldTask, newTask) {
         const foundTodo = _.find(this.state.todos, todo => todo.task === oldTask);
         foundTodo.task = newTask;
-        this.storage.setItem('todos', JSON.stringify(todos));
+        this.storage.setItem('todos', JSON.stringify(this.state.todos));
         this.setState({ todos: this.state.todos });
     }
 
     deleteTask(todoID) {
         _.remove(this.state.todos, todo => todo.task === todoID);
-        this.storage.setItem('todos', JSON.stringify(todos));
+        this.storage.setItem('todos', JSON.stringify(this.state.todos));
         this.setState({ todos: this.state.todos });
     }
     deleteAll(todoID) {
