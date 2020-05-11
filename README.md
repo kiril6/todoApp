@@ -13,8 +13,3 @@ Filter tasks ( All, Active, Completed)
 
 Step 1) npm install
 Step 2) npm start
-
-
-If you like it and you found it helpful and useful you can contribute on my paypal kirilrap@aol.com
-
-Cheers!
