@@ -7,7 +7,7 @@
   "author": "Kiril Delovski",
   "license": "demonstration",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "express": "^4.13.4",
     "lodash": "^4.17.4",
     "react": "^15.6.1",
