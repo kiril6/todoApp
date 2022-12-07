@@ -8,7 +8,7 @@
   "license": "demonstration",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "express": "^4.13.4",
+    "express": "^4.17.3",
     "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
